@@ -5,3 +5,4 @@ plotly
 reportlab
 PyPDF2
 supabase
+streamlit-option-menu
