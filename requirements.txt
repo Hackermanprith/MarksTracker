@@ -4,3 +4,4 @@ matplotlib
 plotly
 reportlab
 PyPDF2
+supabase
