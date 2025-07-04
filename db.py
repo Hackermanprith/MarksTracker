@@ -1,9 +1,10 @@
 from supabase import create_client, Client
 import os
+import streamlit as st
 
 # Set environment variables in your .streamlit/secrets.toml or deployment dashboard
-SUPABASE_URL = str(os.environ.get("SUPABASE_URL"))
-SUPABASE_KEY = str(os.environ.get("SUPABASE_KEY"))
+SUPABASE_URL = st.secrets["SUPABASE_URL"]
+SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
 
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 # ----------------- Auth System (Custom) -----------------
